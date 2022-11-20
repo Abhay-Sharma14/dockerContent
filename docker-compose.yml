@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  abhay-springboot-container:
+    image: abhay-spring-boot-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/abhay-springboot-container
+    ports:
+      - "8080-8100:8080"
